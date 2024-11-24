@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+    <main>
+        <h2>Daily Food Items</h2>
+        <ul>
+            {% for item in menu %}
+                <li>{{ item.name }} - ${{ item.price }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Today's Special Menu</h2>
+        <ul>
+            {% for item in add_special_menu_items %}
+                <li>{{ item.food_item.name }} - ${{ item.food_item.price }}</li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,1102 @@
+[
+    {
+        "label": "django.core.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "post_migrate",
+        "importPath": "django.db.models.signals",
+        "description": "django.db.models.signals",
+        "isExtraImport": true,
+        "detail": "django.db.models.signals",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "stripe",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "stripe",
+        "description": "stripe",
+        "detail": "stripe",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "project_name.app_name.migrations.0001_initial",
+        "description": "project_name.app_name.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='FoodItem',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "project_name.app_name.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "FoodItemAdmin",
+        "kind": 6,
+        "importPath": "project_name.app_name.admin",
+        "description": "project_name.app_name.admin",
+        "peekOfCode": "class FoodItemAdmin(admin.ModelAdmin):\n    list_display = ('name', 'price', 'is_daily', 'category', 'created_at')\n    search_fields = ('name', 'price', 'category')\nclass MenuItemAdmin(admin.ModelAdmin):\n    list_display = ('food_item', 'is_available', 'created_at')\n    list_filter = ('food_item__category', 'is_available')  # Filtering by category\n    search_fields = ('food_item__name', 'food_item__category')  # Searching by category as well\nclass OrderItemAdmin(admin.ModelAdmin):\n    list_display = ('order', 'menu_item', 'quantity', 'total_price')\n    search_fields = ('order__id', 'menu_item__name')",
+        "detail": "project_name.app_name.admin",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItemAdmin",
+        "kind": 6,
+        "importPath": "project_name.app_name.admin",
+        "description": "project_name.app_name.admin",
+        "peekOfCode": "class MenuItemAdmin(admin.ModelAdmin):\n    list_display = ('food_item', 'is_available', 'created_at')\n    list_filter = ('food_item__category', 'is_available')  # Filtering by category\n    search_fields = ('food_item__name', 'food_item__category')  # Searching by category as well\nclass OrderItemAdmin(admin.ModelAdmin):\n    list_display = ('order', 'menu_item', 'quantity', 'total_price')\n    search_fields = ('order__id', 'menu_item__name')\nclass OrderAdmin(admin.ModelAdmin):\n    list_display = ('user', 'total_price', 'status', 'created_at', 'updated_at')\n    list_filter = ('status',)",
+        "detail": "project_name.app_name.admin",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemAdmin",
+        "kind": 6,
+        "importPath": "project_name.app_name.admin",
+        "description": "project_name.app_name.admin",
+        "peekOfCode": "class OrderItemAdmin(admin.ModelAdmin):\n    list_display = ('order', 'menu_item', 'quantity', 'total_price')\n    search_fields = ('order__id', 'menu_item__name')\nclass OrderAdmin(admin.ModelAdmin):\n    list_display = ('user', 'total_price', 'status', 'created_at', 'updated_at')\n    list_filter = ('status',)\n    search_fields = ('user__username', 'status')\nclass UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'phone_number', 'address')\n    search_fields = ('user__username', 'phone_number')",
+        "detail": "project_name.app_name.admin",
+        "documentation": {}
+    },
+    {
+        "label": "OrderAdmin",
+        "kind": 6,
+        "importPath": "project_name.app_name.admin",
+        "description": "project_name.app_name.admin",
+        "peekOfCode": "class OrderAdmin(admin.ModelAdmin):\n    list_display = ('user', 'total_price', 'status', 'created_at', 'updated_at')\n    list_filter = ('status',)\n    search_fields = ('user__username', 'status')\nclass UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'phone_number', 'address')\n    search_fields = ('user__username', 'phone_number')\nclass SpecialMenuAdmin(admin.ModelAdmin):\n    list_display = ('food_item', 'date')\n    list_filter = ('date',)",
+        "detail": "project_name.app_name.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfileAdmin",
+        "kind": 6,
+        "importPath": "project_name.app_name.admin",
+        "description": "project_name.app_name.admin",
+        "peekOfCode": "class UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'phone_number', 'address')\n    search_fields = ('user__username', 'phone_number')\nclass SpecialMenuAdmin(admin.ModelAdmin):\n    list_display = ('food_item', 'date')\n    list_filter = ('date',)\n    search_fields = ('food_item__name',)\nclass ReservationAdmin(admin.ModelAdmin):\n    list_display = ('user', 'reservation_date', 'special_requests')\n    list_filter = ('reservation_date',)",
+        "detail": "project_name.app_name.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SpecialMenuAdmin",
+        "kind": 6,
+        "importPath": "project_name.app_name.admin",
+        "description": "project_name.app_name.admin",
+        "peekOfCode": "class SpecialMenuAdmin(admin.ModelAdmin):\n    list_display = ('food_item', 'date')\n    list_filter = ('date',)\n    search_fields = ('food_item__name',)\nclass ReservationAdmin(admin.ModelAdmin):\n    list_display = ('user', 'reservation_date', 'special_requests')\n    list_filter = ('reservation_date',)\n    search_fields = ('user__username',)\nclass DeliveryPersonnelAdmin(admin.ModelAdmin):\n    list_display = ('user', 'assigned_orders_count')",
+        "detail": "project_name.app_name.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ReservationAdmin",
+        "kind": 6,
+        "importPath": "project_name.app_name.admin",
+        "description": "project_name.app_name.admin",
+        "peekOfCode": "class ReservationAdmin(admin.ModelAdmin):\n    list_display = ('user', 'reservation_date', 'special_requests')\n    list_filter = ('reservation_date',)\n    search_fields = ('user__username',)\nclass DeliveryPersonnelAdmin(admin.ModelAdmin):\n    list_display = ('user', 'assigned_orders_count')\n    search_fields = ('user__username',)\n    def assigned_orders_count(self, obj):\n        return obj.get_assigned_orders().count()\n    assigned_orders_count.short_description = 'Assigned Orders'",
+        "detail": "project_name.app_name.admin",
+        "documentation": {}
+    },
+    {
+        "label": "DeliveryPersonnelAdmin",
+        "kind": 6,
+        "importPath": "project_name.app_name.admin",
+        "description": "project_name.app_name.admin",
+        "peekOfCode": "class DeliveryPersonnelAdmin(admin.ModelAdmin):\n    list_display = ('user', 'assigned_orders_count')\n    search_fields = ('user__username',)\n    def assigned_orders_count(self, obj):\n        return obj.get_assigned_orders().count()\n    assigned_orders_count.short_description = 'Assigned Orders'\nadmin.site.register(FoodItem, FoodItemAdmin)\nadmin.site.register(MenuItem, MenuItemAdmin)\nadmin.site.register(Order, OrderAdmin)\nadmin.site.register(OrderItem, OrderItemAdmin)",
+        "detail": "project_name.app_name.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AppNameConfig",
+        "kind": 6,
+        "importPath": "project_name.app_name.apps",
+        "description": "project_name.app_name.apps",
+        "peekOfCode": "class AppNameConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'app_name'\ndef create_default_food_item(sender, **kwargs):\n    from .models import FoodItem\n    # Check if the default item already exists\n    if not FoodItem.objects.filter(name=\"Default Food Item\").exists():\n        # Create the default FoodItem\n        FoodItem.objects.create(\n            name=\"Default Food Item\",",
+        "detail": "project_name.app_name.apps",
+        "documentation": {}
+    },
+    {
+        "label": "YourAppConfig",
+        "kind": 6,
+        "importPath": "project_name.app_name.apps",
+        "description": "project_name.app_name.apps",
+        "peekOfCode": "class YourAppConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'app_name'\n    def ready(self):\n        post_migrate.connect(create_default_food_item, sender=self)",
+        "detail": "project_name.app_name.apps",
+        "documentation": {}
+    },
+    {
+        "label": "create_default_food_item",
+        "kind": 2,
+        "importPath": "project_name.app_name.apps",
+        "description": "project_name.app_name.apps",
+        "peekOfCode": "def create_default_food_item(sender, **kwargs):\n    from .models import FoodItem\n    # Check if the default item already exists\n    if not FoodItem.objects.filter(name=\"Default Food Item\").exists():\n        # Create the default FoodItem\n        FoodItem.objects.create(\n            name=\"Default Food Item\",\n            description=\"A default food item.\",\n            price=10.00,\n            is_daily=False",
+        "detail": "project_name.app_name.apps",
+        "documentation": {}
+    },
+    {
+        "label": "FoodItemForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class FoodItemForm(forms.ModelForm):\n    class Meta:\n        model = FoodItem\n        fields = ['name', 'description', 'price', 'is_daily']\nclass MenuItemForm(forms.ModelForm):\n    class Meta:\n        model = MenuItem\n        fields = ['food_item', 'is_available']\nclass SpecialMenuForm(forms.ModelForm):\n    class Meta:",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItemForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class MenuItemForm(forms.ModelForm):\n    class Meta:\n        model = MenuItem\n        fields = ['food_item', 'is_available']\nclass SpecialMenuForm(forms.ModelForm):\n    class Meta:\n        model = SpecialMenu\n        fields = ['food_item', 'date']\nclass OrderForm(forms.ModelForm):\n    class Meta:",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "SpecialMenuForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class SpecialMenuForm(forms.ModelForm):\n    class Meta:\n        model = SpecialMenu\n        fields = ['food_item', 'date']\nclass OrderForm(forms.ModelForm):\n    class Meta:\n        model = Order\n        fields = ['user', 'total_price', 'status']\nclass OrderItemForm(forms.ModelForm):\n    class Meta:",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "OrderForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class OrderForm(forms.ModelForm):\n    class Meta:\n        model = Order\n        fields = ['user', 'total_price', 'status']\nclass OrderItemForm(forms.ModelForm):\n    class Meta:\n        model = OrderItem\n        fields = ['order', 'menu_item', 'quantity']\nclass ReservationForm(forms.ModelForm):\n    class Meta:",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItemForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class OrderItemForm(forms.ModelForm):\n    class Meta:\n        model = OrderItem\n        fields = ['order', 'menu_item', 'quantity']\nclass ReservationForm(forms.ModelForm):\n    class Meta:\n        model = Reservation\n        fields = ['user', 'number_of_people', 'reservation_date', 'special_requests']\nclass UserProfileForm(forms.ModelForm):\n    class Meta:",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ReservationForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class ReservationForm(forms.ModelForm):\n    class Meta:\n        model = Reservation\n        fields = ['user', 'number_of_people', 'reservation_date', 'special_requests']\nclass UserProfileForm(forms.ModelForm):\n    class Meta:\n        model = UserProfile\n        fields = ['user', 'phone_number', 'address', 'profile_picture']\nclass PaymentForm(forms.ModelForm):\n    class Meta:",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfileForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class UserProfileForm(forms.ModelForm):\n    class Meta:\n        model = UserProfile\n        fields = ['user', 'phone_number', 'address', 'profile_picture']\nclass PaymentForm(forms.ModelForm):\n    class Meta:\n        model = Payment\n        fields = ['order', 'stripe_payment_id', 'amount_paid']\nclass DeliveryPersonnelForm(forms.ModelForm):\n    class Meta:",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class PaymentForm(forms.ModelForm):\n    class Meta:\n        model = Payment\n        fields = ['order', 'stripe_payment_id', 'amount_paid']\nclass DeliveryPersonnelForm(forms.ModelForm):\n    class Meta:\n        model = DeliveryPersonnel\n        fields = ['user', 'phone_number', 'is_active']\nclass OrderStatusHistoryForm(forms.ModelForm):\n    class Meta:",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "DeliveryPersonnelForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class DeliveryPersonnelForm(forms.ModelForm):\n    class Meta:\n        model = DeliveryPersonnel\n        fields = ['user', 'phone_number', 'is_active']\nclass OrderStatusHistoryForm(forms.ModelForm):\n    class Meta:\n        model = OrderStatusHistory\n        fields = ['order', 'status']",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "OrderStatusHistoryForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.forms",
+        "description": "project_name.app_name.forms",
+        "peekOfCode": "class OrderStatusHistoryForm(forms.ModelForm):\n    class Meta:\n        model = OrderStatusHistory\n        fields = ['order', 'status']",
+        "detail": "project_name.app_name.forms",
+        "documentation": {}
+    },
+    {
+        "label": "FoodItem",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class FoodItem(models.Model):\n    name = models.CharField(max_length=255)\n    description = models.TextField()\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    is_daily = models.BooleanField(default=False)\n    category = models.CharField(max_length=100, blank=True, null=True)  # Added category field\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return self.name",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "MenuItem",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class MenuItem(models.Model):\n    food_item = models.ForeignKey(FoodItem, related_name=\"menu_items\", on_delete=models.CASCADE)\n    is_available = models.BooleanField(default=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return f\"{self.food_item.name} - Available: {self.is_available}\"\nclass SpecialMenu(models.Model):\n    food_item = models.ForeignKey(FoodItem, related_name=\"special_menu_items\", on_delete=models.CASCADE)\n    date = models.DateField(default=timezone.now)\n    def __str__(self):",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "SpecialMenu",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class SpecialMenu(models.Model):\n    food_item = models.ForeignKey(FoodItem, related_name=\"special_menu_items\", on_delete=models.CASCADE)\n    date = models.DateField(default=timezone.now)\n    def __str__(self):\n        return f\"{self.food_item.name} - Special for {self.date}\"\nclass Order(models.Model):\n    STATUS_CHOICES = [\n        ('pending', 'Pending'),\n        ('paid', 'Paid'),\n        ('cancelled', 'Cancelled'),",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class Order(models.Model):\n    STATUS_CHOICES = [\n        ('pending', 'Pending'),\n        ('paid', 'Paid'),\n        ('cancelled', 'Cancelled'),\n        ('completed', 'Completed'),\n    ]\n    user = models.ForeignKey(User, on_delete=models.CASCADE, default=timezone.now)\n    total_price = models.DecimalField(max_digits=10, decimal_places=2, default=Decimal('0.00'))\n    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pending')",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderItem",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class OrderItem(models.Model):\n    order = models.ForeignKey(Order, related_name=\"order_items\", on_delete=models.CASCADE)\n    menu_item = models.ForeignKey(MenuItem, on_delete=models.CASCADE)\n    quantity = models.PositiveIntegerField(validators=[MinValueValidator(1)])\n    created_at = models.DateTimeField(auto_now_add=True)\n    def total_price(self):\n        return self.menu_item.food_item.price * self.quantity\n    def __str__(self):\n        return f\"{self.menu_item.food_item.name} x {self.quantity}\"\nclass Reservation(models.Model):",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "Reservation",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class Reservation(models.Model):\n    user = models.ForeignKey(User, on_delete=models.CASCADE)\n    number_of_people = models.PositiveIntegerField(validators=[MinValueValidator(1)])\n    reservation_date = models.DateTimeField()\n    special_requests = models.TextField(blank=True, null=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return f\"Reservation for {self.number_of_people} people - {self.reservation_date}\"\nclass UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserProfile",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    phone_number = models.CharField(max_length=15, blank=True, null=True)\n    address = models.TextField(blank=True, null=True)\n    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)\n    def __str__(self):\n        return self.user.username\nclass Payment(models.Model):\n    order = models.OneToOneField(Order, related_name=\"payment\", on_delete=models.CASCADE)\n    stripe_payment_id = models.CharField(max_length=255, unique=True)",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "Payment",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class Payment(models.Model):\n    order = models.OneToOneField(Order, related_name=\"payment\", on_delete=models.CASCADE)\n    stripe_payment_id = models.CharField(max_length=255, unique=True)\n    amount_paid = models.DecimalField(max_digits=10, decimal_places=2)\n    payment_date = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return f\"Payment for Order #{self.order.id}\"\nclass DeliveryPersonnel(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    phone_number = models.CharField(max_length=15)",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "DeliveryPersonnel",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class DeliveryPersonnel(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    phone_number = models.CharField(max_length=15)\n    is_active = models.BooleanField(default=True)\n    def __str__(self):\n        return self.user.username\n    def get_assigned_orders(self):\n        return Order.objects.filter(delivery_personnel=self)\nclass OrderStatusHistory(models.Model):\n    order = models.ForeignKey(Order, related_name=\"status_history\", on_delete=models.CASCADE)",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "OrderStatusHistory",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class OrderStatusHistory(models.Model):\n    order = models.ForeignKey(Order, related_name=\"status_history\", on_delete=models.CASCADE)\n    status = models.CharField(max_length=10, choices=Order.STATUS_CHOICES)\n    updated_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return f\"Status change for Order #{self.order.id} to {self.status} at {self.updated_at}\"\nclass SpecialMenuForm(models.Model):\n    food_item = models.ForeignKey(FoodItem, related_name=\"special_menu_forms\", on_delete=models.CASCADE)\n    date = models.DateField(default=timezone.now)\n    def __str__(self):",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "SpecialMenuForm",
+        "kind": 6,
+        "importPath": "project_name.app_name.models",
+        "description": "project_name.app_name.models",
+        "peekOfCode": "class SpecialMenuForm(models.Model):\n    food_item = models.ForeignKey(FoodItem, related_name=\"special_menu_forms\", on_delete=models.CASCADE)\n    date = models.DateField(default=timezone.now)\n    def __str__(self):\n        return f\"{self.food_item.name} for {self.date}\"",
+        "detail": "project_name.app_name.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "project_name.app_name.urls",
+        "description": "project_name.app_name.urls",
+        "peekOfCode": "urlpatterns = [\n    # Home page\n    path('', views.home, name='home'),\n    # User authentication views\n    path('register/', views.register_view, name='register'),\n    path('login/', views.login_view, name='login'),\n    # Order and menu views\n    path('order/', views.place_order, name='order'),\n    path('order/success/', views.order_success, name='order_success'),\n    path('menu/', views.menu, name='menu'),",
+        "detail": "project_name.app_name.urls",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def home(request):\n    return render(request, \"app_name/home.html\")\ndef register_view(request):\n    if request.method == \"POST\":\n        username = request.POST[\"username\"]\n        email = request.POST[\"email\"]\n        password1 = request.POST[\"password1\"]\n        password2 = request.POST[\"password2\"]\n        # Check if passwords match\n        if password1 != password2:",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "register_view",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def register_view(request):\n    if request.method == \"POST\":\n        username = request.POST[\"username\"]\n        email = request.POST[\"email\"]\n        password1 = request.POST[\"password1\"]\n        password2 = request.POST[\"password2\"]\n        # Check if passwords match\n        if password1 != password2:\n            messages.error(request, \"Passwords do not match.\")\n            return redirect(\"register\")",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def login_view(request):\n    if request.method == \"POST\":\n        username = request.POST[\"username\"]\n        password = request.POST[\"password\"]\n        # Authenticate the user\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect(\n                \"home\"",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "place_order",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def place_order(request):\n    form = OrderForm()  # Initialize the form\n    if request.method == \"POST\":\n        form = OrderForm(request.POST)\n        if form.is_valid():\n            order = form.save(commit=False)\n            order.user = request.user\n            total_price = 0\n            # Loop through each item submitted in the order form\n            for key, value in request.POST.items():",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "reservation_view",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def reservation_view(request):\n    if request.method == \"POST\":\n        form = ReservationForm(request.POST)\n        if form.is_valid():\n            reservation = form.save(commit=False)\n            reservation.user = request.user  # Link reservation to the logged-in user\n            reservation.save()\n            messages.success(request, \"Your reservation has been successfully made!\")\n            return redirect(\"reservation_success\")\n        else:",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "reservation_success",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def reservation_success(request):\n    return render(request, \"app_name/reservation_success.html\")\n@login_required\ndef profile_view(request):\n    user_profile, form= UserProfile.objects.get_or_create(user=request.user)\n    if request.method == \"POST\":\n        form = UserProfileForm(request.POST, request.FILES, instance=user_profile)\n        if form.is_valid():\n            form.save()\n            messages.success(request, \"Your profile has been updated successfully!\")",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "profile_view",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def profile_view(request):\n    user_profile, form= UserProfile.objects.get_or_create(user=request.user)\n    if request.method == \"POST\":\n        form = UserProfileForm(request.POST, request.FILES, instance=user_profile)\n        if form.is_valid():\n            form.save()\n            messages.success(request, \"Your profile has been updated successfully!\")\n            return redirect(\"profile\")\n        else:\n            messages.error(request, \"There was an error updating your profile.\")",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "menu",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def menu(request):\n    daily_food_items = FoodItem.objects.filter(is_daily=True)\n    special_menu_items = SpecialMenu.objects.filter(date=date.today())\n    return render(request, 'app_name/menu.html', {\n        'daily_food_items': daily_food_items,\n        'special_menu_items': special_menu_items,\n    })\n# View to add a special food item to the menu for today\ndef add_special_menu(request):\n    if request.method == 'POST':",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_special_menu",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def add_special_menu(request):\n    if request.method == 'POST':\n        form = SpecialMenuForm(request.POST)\n        if form.is_valid():\n            special_menu = form.save(commit=False)\n            special_menu.date = date.today()  # Ensure the food item is added for today's date\n            special_menu.save()\n            return redirect('menu')  # Redirect to the menu page after adding\n    else:\n        form = SpecialMenuForm()",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "update_order_status",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def update_order_status(request, order_id):\n    order = get_object_or_404(Order, id=order_id)\n    if request.method == \"POST\":\n        status = request.POST.get(\"status\")\n        if status in dict(Order.STATUS_CHOICES):\n            order.status = status\n            order.save()\n            # Notify the customer\n            notify_customer(order)\n            return redirect(\"order_success\")  # Redirect to a success page",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "notify_customer",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def notify_customer(order):\n    subject = \"Your Order Status has been Updated\"\n    message = (\n        \"Hello \"\n        + order.customer_name\n        + \"\\n\\nYour order status has been updated to:\"\n        + order.get_status_display()\n    )\n    email_from = settings.EMAIL_HOST_USER\n    recipient_list = [order.customer_email]",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "process_payment",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def process_payment(request, order_id):\n    order = Order.objects.get(id=order_id)\n    if request.method == \"POST\":\n        form = PaymentForm(request.POST)\n        if form.is_valid():\n            token = form.cleaned_data[\"stripeToken\"]\n            amount = int(order.total_price * 100)  # Convert to cents\n            try:\n                # Create a Stripe charge\n                stripe.Charge.create(",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "payment_success",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def payment_success(request):\n    return render(request, \"app_name/payment_success.html\")\ndef payment_error(request):\n    return render(request, \"app_name/payment_error.html\")\ndef assigned_orders(request):\n    delivery_person = get_object_or_404(DeliveryPersonnel, user=request.user)\n    orders = Order.objects.filter(delivery_personnel=delivery_person)\n    return render(request, \"app_name/assigned_orders.html\", {\"orders\": orders})\n@login_required\ndef update_delivery_status(request, order_id):",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "payment_error",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def payment_error(request):\n    return render(request, \"app_name/payment_error.html\")\ndef assigned_orders(request):\n    delivery_person = get_object_or_404(DeliveryPersonnel, user=request.user)\n    orders = Order.objects.filter(delivery_personnel=delivery_person)\n    return render(request, \"app_name/assigned_orders.html\", {\"orders\": orders})\n@login_required\ndef update_delivery_status(request, order_id):\n    order = get_object_or_404(Order, id=order_id)\n    if request.method == \"POST\":",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "assigned_orders",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def assigned_orders(request):\n    delivery_person = get_object_or_404(DeliveryPersonnel, user=request.user)\n    orders = Order.objects.filter(delivery_personnel=delivery_person)\n    return render(request, \"app_name/assigned_orders.html\", {\"orders\": orders})\n@login_required\ndef update_delivery_status(request, order_id):\n    order = get_object_or_404(Order, id=order_id)\n    if request.method == \"POST\":\n        new_status = request.POST.get(\"status\")\n        order.status = new_status",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "update_delivery_status",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def update_delivery_status(request, order_id):\n    order = get_object_or_404(Order, id=order_id)\n    if request.method == \"POST\":\n        new_status = request.POST.get(\"status\")\n        order.status = new_status\n        order.save()\n        return redirect(\"assigned_orders\")\n    return render(request, \"app_name/update_status.html\", {\"order\": order})\ndef order_success(request):\n    return render(request, \"app_name/order_success.html\")",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "order_success",
+        "kind": 2,
+        "importPath": "project_name.app_name.views",
+        "description": "project_name.app_name.views",
+        "peekOfCode": "def order_success(request):\n    return render(request, \"app_name/order_success.html\")",
+        "detail": "project_name.app_name.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "project_name.project_name.asgi",
+        "description": "project_name.project_name.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "project_name.project_name.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-25wj&4vx0g+dw1wp54(po-8-g!mgi(f_spvao%qniw0x_p9hm3'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-25wj&4vx0g+dw1wp54(po-8-g!mgi(f_spvao%qniw0x_p9hm3'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'app_name',",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'app_name',\n]\nMIDDLEWARE = [",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'project_name.urls'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "ROOT_URLCONF = 'project_name.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'project_name.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'app_name', 'static')]\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Default primary key field type",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'app_name', 'static')]\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'app_name', 'static')]\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\n# project_name/settings.py",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'app_name', 'static')]\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\n# project_name/settings.py\nLOGIN_REDIRECT_URL = 'home'  # After login, redirect to homepage",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR, 'app_name', 'static')]\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\n# project_name/settings.py\nLOGIN_REDIRECT_URL = 'home'  # After login, redirect to homepage\nLOGOUT_REDIRECT_URL = 'login'  # After logout, redirect to login page\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "STATICFILES_DIRS = [os.path.join(BASE_DIR, 'app_name', 'static')]\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\n# project_name/settings.py\nLOGIN_REDIRECT_URL = 'home'  # After login, redirect to homepage\nLOGOUT_REDIRECT_URL = 'login'  # After logout, redirect to login page\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# settings.py",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\n# project_name/settings.py\nLOGIN_REDIRECT_URL = 'home'  # After login, redirect to homepage\nLOGOUT_REDIRECT_URL = 'login'  # After logout, redirect to login page\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# settings.py\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = 'home'  # After login, redirect to homepage\nLOGOUT_REDIRECT_URL = 'login'  # After logout, redirect to login page\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# settings.py\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.your-email-provider.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGOUT_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = 'login'  # After logout, redirect to login page\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# settings.py\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.your-email-provider.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# settings.py\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.your-email-provider.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# settings.py\nEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.your-email-provider.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'\nEMAIL_HOST = 'smtp.your-email-provider.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "EMAIL_HOST = 'smtp.your-email-provider.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_PORT",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_USE_TLS",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_USER",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_HOST_PASSWORD",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STRIPE_TEST_PUBLIC_KEY",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "STRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STRIPE_TEST_SECRET_KEY",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "STRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "project_name.project_name.urls",
+        "description": "project_name.project_name.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('app_name.urls')),  # Replace 'app_name' with the actual name of your app\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "project_name.project_name.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "project_name.project_name.wsgi",
+        "description": "project_name.project_name.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "project_name.project_name.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "project_name.manage",
+        "description": "project_name.manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project_name.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "project_name.manage",
+        "documentation": {}
+    }
+]

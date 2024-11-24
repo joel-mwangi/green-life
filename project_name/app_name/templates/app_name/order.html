@@ -1,0 +1,36 @@
+{% extends 'app_name/base.html' %}
+
+{% block title %}Place Order - Green Life Hotel{% endblock %}
+
+{% block content %}
+<h1>Place Your Order</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    
+    <h2>Select Menu Items</h2>
+    <ul>
+        {% for item in menu %}
+            <li>
+                <label>{{ item.name }} - {{ item.price }}</label>
+                <input type="number" name="item_{{ item.id }}" min="1" value="1">
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <button type="submit" name="submit_order">Submit Order</button>
+</form>
+
+{% if form.errors %}
+    <div class="error">
+        <ul>
+            {% for field in form %}
+                {% for error in field.errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,10 @@
+<!-- payments/payment_success.html -->
+{% extends 'base.html' %}
+
+{% block title %}Payment Success{% endblock %}
+
+{% block content %}
+<h2>Payment Successful!</h2>
+<p>Thank you for your order. Your payment has been processed.</p>
+<a href="{% url 'home' %}">Go to Home</a>
+{% endblock %}

@@ -1,0 +1,279 @@
+{% load static %} <!-- Load static files at the top of the template -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Life Hotel</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Link to CSS file -->
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <style>
+
+ 
+/* Hamburger Icon */
+.hamburger {
+    display: none; /* Hidden on larger screens */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Sidebar Navigation */
+nav ul {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: left 0.3s ease; /* Smooth sliding effect */
+    z-index: 10;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Show sidebar when active */
+.menu.active {
+    left: 0; /* Slide menu into view */
+}
+
+/* Full Navigation Display for Larger Screens */
+@media (min-width: 769px) {
+    nav ul {
+        position: static; /* Reset position for larger screens */
+        width: auto; /* Reset width for larger screens */
+        height: auto; /* Reset height for larger screens */
+        flex-direction: row; /* Horizontal layout for larger screens */
+        background-color: transparent; /* Transparent background for larger screens */
+        padding-top: 0; /* Reset padding for larger screens */
+        transition: none; /* Remove transition for larger screens */
+    }
+
+    nav ul li {
+        margin: 0 15px; /* Adjust margin for larger screens */
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger icon on larger screens */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger icon on smaller screens */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <figure class="header-figure">
+                <div class="logo">
+                    <img src="{% static 'images/logo1.jfif' %}" alt="Green Life Hotel Logo">
+                </div>
+                <figcaption>Green Life Hotel<br>Your perfect getaway destination.</figcaption>
+            </figure>
+              <!-- Hamburger icon for mobile view -->
+        <button class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- This is the "hamburger" icon -->
+        </button>
+            <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="{%url 'profile'%}">My Profile</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Book Now</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'order' %}">Order</a></li>
+                            <li><a href="{% url 'menu' %}">Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
+                    <li><a href="#"id="place-order-link">Place your order</a></li>
+                    <li><a href="{% url 'reservation' %}">Book a Reservation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="background-slideshow">
+            <div class="slide-container">
+                <img src="{% static 'images/image1.jpg' %}" alt="Image 1">
+                <img src="{% static 'images/image2.jpg' %}" alt="Image 2">
+                <img src="{% static 'images/image3.jpg' %}" alt="Image 3">
+                <img src="{% static 'images/image4.webp' %}" alt="Image 4">
+                <img src="{% static 'images/image5.jpg' %}" alt="Image 5">
+                <img src="{% static 'images/image6.jpg' %}" alt="Image 6">
+                <img src="{% static 'images/image7.webp' %}" alt="Image 7">
+                <img src="{% static 'images/image8.jpg' %}" alt="Image 8">
+                <img src="{% static 'images/image9.webp' %}" alt="Image 9">
+                <img src="{% static 'images/image10.jpg' %}" alt="Image 10">
+                <img src="{% static 'images/image12.jpg' %}" alt="Image 12">
+                <img src="{% static 'images/image13.jpg' %}" alt="Image 13">  
+                <img src="{% static 'images/image18.jpg' %}" alt="Image 18">
+            </div>
+            <!-- Navigation buttons -->
+            <div class="nav-buttons">
+                <button class="nav-button left" onclick="previousSlide()">&#10094;</button>
+                <button class="nav-button right" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+
+      <!-- Hidden Order Form Section -->
+      <div id="order-section" class="container" style="display:none;">
+        <h1>Our Food Menu</h1>
+        <form id="food-order-form">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Food Item</th>
+                        <th>Description</th>
+                        <th class="price">Price</th>
+                        <th>Select</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cheeseburger</td>
+                        <td>A classic beef burger with melted cheese, lettuce, and tomato</td>
+                        <td class="price">$8.99</td>
+                        <td><input type="checkbox" name="item" value="8.99" class="food-item"></td>
+                        <td><input type="number" name="quantity" value="1" min="1" class="quantity" data-price="8.99"></td>
+                    </tr>
+                    <tr>
+                        <td>Margherita Pizza</td>
+                        <td>Tomato, mozzarella, and fresh basil</td>
+                        <td class="price">$12.50</td>
+                        <td><input type="checkbox" name="item" value="12.50" class="food-item"></td>
+                        <td><input type="number" name="quantity" value="1" min="1" class="quantity" data-price="12.50"></td>
+                    </tr>
+                    <tr>
+                        <td>Caesar Salad</td>
+                        <td>Crisp romaine lettuce with Caesar dressing and croutons</td>
+                        <td class="price">$7.99</td>
+                        <td><input type="checkbox" name="item" value="7.99" class="food-item"></td>
+                        <td><input type="number" name="quantity" value="1" min="1" class="quantity" data-price="7.99"></td>
+                    </tr>
+                    <tr>
+                        <td>Spaghetti Carbonara</td>
+                        <td>Classic Italian pasta with creamy sauce, bacon, and Parmesan</td>
+                        <td class="price">$14.00</td>
+                        <td><input type="checkbox" name="item" value="14.00" class="food-item"></td>
+                        <td><input type="number" name="quantity" value="1" min="1" class="quantity" data-price="14.00"></td>
+                    </tr>
+                    <tr>
+                        <td>Grilled Chicken</td>
+                        <td>Marinated chicken breast grilled to perfection</td>
+                        <td class="price">$10.99</td>
+                        <td><input type="checkbox" name="item" value="10.99" class="food-item"></td>
+                        <td><input type="number" name="quantity" value="1" min="1" class="quantity" data-price="10.99"></td>
+                    </tr>
+                    <tr>
+                        <td>Vegetarian Wrap</td>
+                        <td>Fresh veggies and hummus wrapped in a whole-wheat tortilla</td>
+                        <td class="price">$9.50</td>
+                        <td><input type="checkbox" name="item" value="9.50" class="food-item"></td>
+                        <td><input type="number" name="quantity" value="1" min="1" class="quantity" data-price="9.50"></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <div class="total-price">
+                <span>Total Price: $<span id="total-price">0.00</span></span>
+            </div>
+    
+            <button type="submit" class="order-btn">Submit Order</button>
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Green Life Hotel. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/scripts.js' %}"></script> <!-- Link to JavaScript file -->
+    <script>
+        const placeOrderLink = document.getElementById('place-order-link');
+        const orderSection = document.getElementById('order-section');
+
+        // Show order form when "Place Order" is clicked
+        placeOrderLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            orderSection.style.display = 'block'; // Show the order form
+        });
+
+        const foodItems = document.querySelectorAll('.food-item');
+        const quantityFields = document.querySelectorAll('.quantity');
+        const totalPriceElement = document.getElementById('total-price');
+    
+        function updateTotalPrice() {
+            let total = 0;
+            foodItems.forEach((checkbox, index) => {
+                if (checkbox.checked) {
+                    const quantity = quantityFields[index].value;
+                    const price = parseFloat(checkbox.value);
+                    total += price * quantity;
+                }
+            });
+            totalPriceElement.textContent = total.toFixed(2);
+        }
+    
+        foodItems.forEach(item => {
+            item.addEventListener('change', updateTotalPrice);
+        });
+    
+        quantityFields.forEach(field => {
+            field.addEventListener('input', updateTotalPrice);
+        });
+    
+        document.getElementById('food-order-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert("Your order has been submitted successfully!");
+        });
+        
+        
+    </script>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+</script>
+</body>
+</html>

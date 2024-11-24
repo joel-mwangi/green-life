@@ -1,0 +1,426 @@
+/* General Styles */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/* Header Styles */
+header {
+    background: #007A33; /* Green color */
+    color: #fff;
+    padding: 20px 0;
+    position: relative;/* Ensure the header is position relative to the background*/
+ z-index: 10;   /* Higher Z-index to stay on top of the background images*/
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.header-figure {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;  /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    overflow: hidden; /* Ensure overflow is hidden */
+    border-radius: 50%; /* Make it circular */
+    border: 3px solid #4CAF50; /* Optional: Add a border color that matches your theme */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4CAF50, #e8f5e9); /* Optional: Add a background gradient */
+}
+
+.logo img {
+    width: 100%;  /* Make the image take full width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add a transition effect for hover */
+}
+
+.logo:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+
+figcaption {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight color */
+}
+/* Main Content Styles */
+ main { 
+    flex: 1; /* This makes the main content take up the remaining space */ 
+    position: relative; 
+    z-index: 1; }
+/* Dropdown Menu */
+nav ul li .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position dropdown absolutely */
+    background-color: #007A33; /* Match dropdown with header */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    left: 0; /* Align dropdown to the left of the parent li */
+    z-index: 20; /* Ensure dropdown appears above other content */
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown-menu {
+    display: block; /* Show dropdown when hovering over parent li */
+}
+
+/* Dropdown Item Styles */
+nav ul li .dropdown-menu li {
+    margin: 5px 0; /* Space between dropdown items */
+}
+
+nav ul li .dropdown-menu li a {
+    color: #fff; /* Dropdown link color */
+    text-decoration: none; /* Remove underline from dropdown links */
+    display: block; /* Make dropdown links fill their parent */
+    padding: 5px 10px; /* Padding for dropdown links */
+}
+
+nav ul li .dropdown-menu li a:hover {
+    background-color: #4CAF50; /* Highlight color on hover */
+}
+
+/* Main Link Styles */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+     padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight color */
+}
+
+/* Ensure dropdown is hidden when mouse leaves the parent item */
+nav ul li:hover .dropdown-menu {
+    display: block; /* Show dropdown when hovering over parent li */
+}
+/* Full-screen slideshow styling */
+.background-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0; /* Ensures the slideshow stays behind the header */
+    top: 0;
+    left:0;
+    z-index: 1; /* Ensure images are at the base layer */
+}
+.slide-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the images behind other content */
+}
+
+.slide-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    
+    bottom: auto;
+    top: auto;
+    margin:0 0 0 0;
+}
+
+@keyframes slideshow {
+    0%, 10% { opacity: 1; }
+    15%, 100% { opacity: 0; }
+}
+
+/* Sequential timing for each image in the slideshow */
+@keyframes fade{
+    from {opacity: .5;}
+    to{opacity: 1;}
+}
+.background-slideshow img:nth-child(1) { animation-delay: 0s; }
+.background-slideshow img:nth-child(2) { animation-delay: 4s; }
+.background-slideshow img:nth-child(3) { animation-delay: 8s; }
+.background-slideshow img:nth-child(4) { animation-delay: 12s; }
+.background-slideshow img:nth-child(5) { animation-delay: 16s; }
+.background-slideshow img:nth-child(6) { animation-delay: 20s; }
+.background-slideshow img:nth-child(7) { animation-delay: 24s; }
+.background-slideshow img:nth-child(8) { animation-delay: 28s; }
+.background-slideshow img:nth-child(9) { animation-delay: 32s; }
+.background-slideshow img:nth-child(10) { animation-delay: 36s; }
+.background-slideshow img:nth-child(11) { animation-delay: 40s; }
+.background-slideshow img:nth-child(12) { animation-delay: 44s; }
+.background-slideshow img:nth-child(13) { animation-delay: 48s; }
+.background-slideshow img:nth-child(18) { animation-delay: 52s; }
+
+
+/* Initial visible image */
+.slide-container img.active {
+    opacity: 1;
+}
+/* Styles for the navigation buttons */
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* Allow clicks only on buttons */
+}
+
+.nav-button {
+    background-color: transparent !important; /* No background color */
+    color:black; /* Arrow color */
+    border: none;
+    padding: 10px; /* Adjust padding for smaller button size */
+    font-size: 50px;
+    cursor: pointer;
+    outline: none;
+    pointer-events: all; /* Enable clicks on buttons */
+}
+
+.nav-button.left {
+    position: absolute;
+    left: 10px; /* Position to the left margin */
+}
+
+.nav-button.right {
+    position: absolute;
+    right: 10px; /* Position to the right margin */
+}
+
+.nav-button:hover {
+    background-color: transparent !important; /* Ensure no background color on hover */
+    color:#007A33; /* Optional: change arrow color on hover if desired */
+    outline: none; /* Remove any outline */
+}
+
+
+
+
+
+footer {
+    background-color: #007A33; /* Green background color */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center text alignment */
+    padding: 20px 0; /* Space inside the footer */
+    z-index: 2; /* Ensures it appears on top other content */
+    margin-top: auto;/*pushes the footer to the bottom*/
+position: relative;
+}
+footer p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+footer .social-media a {
+    color: #ffffff; /* White color for links */
+    margin: 0 10px; /* Space between social media links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ffcc00;
+}
+/* Tablet View */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 8px 10px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+}
+
+#order-section {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 20; /* Higher than the background slideshow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background-color:chocolate;
+}
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* White background for the table */
+    border-radius: 10px;
+    overflow: hidden; /* To ensure rounded corners */
+}
+
+/* Style the table header */
+th {
+    background-color: #2E8B57; /* Green header */
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+/* Style table rows */
+td {
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the price column */
+.price {
+    text-align: right;
+}
+
+/* Style the table row when hovering */
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Style the checkbox and quantity inputs */
+input[type="checkbox"], input[type="number"] {
+    margin: 5px;
+}
+
+/* Style the total price section */
+.total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Style the submit order button */
+.order-btn {
+    background-color: #2E8B57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.order-btn:hover {
+    background-color: #1c6f3c;
+}
+/* Ensure the profile picture is a circle */
+.img-circle {
+    border-radius: 50%;        /* Circular shape */
+    object-fit: cover;         /* Ensures the image fills the circle without distortion */
+    margin-bottom: 20px;       /* Space below the image */
+    border: 2px solid #ccc;   /* Optional: Add a border to the circle for better definition */
+  }
+  
+  /* Form styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    margin-top: 15px;
+  }
+  
+  /* Improve layout with a responsive design */
+  .container {
+    margin-top: 30px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-md-4 {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust space below the profile picture */
+  }
+  
+  .col-md-8 {
+    padding-left: 30px;
+  }
+  

@@ -1,0 +1,10 @@
+<!-- payments/payment_error.html -->
+{% extends 'base.html' %}
+
+{% block title %}Payment Error{% endblock %}
+
+{% block content %}
+<h2>Payment Failed</h2>
+<p>Unfortunately,there was an error processing your payment. Please try again.</p>
+<a href="{% url 'home' %}">Go to Home</a>
+{% endblock %}

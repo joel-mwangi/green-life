@@ -1,0 +1,52 @@
+{% load static %} <!-- Load static files -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Green Life Hotel</title>
+    <link rel="stylesheet" href="{% static 'css/formstyles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Create an Account</h1>
+    </header>
+    
+    <main>
+        {% if messages %}  <!-- Check if there are any messages -->
+            <ul>
+                {% for message in messages %}  <!-- Loop through messages -->
+                    <li>{{ message }}</li>  <!-- Display each message -->
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <form action="{% url 'register' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password1">Password:</label>
+                <input type="password" id="password1" name="password1" required>
+            </div>
+            <div class="form-group">
+                <label for="password2">Confirm Password:</label>
+                <input type="password" id="password2" name="password2" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Green Life Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>

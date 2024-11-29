@@ -1,9 +1,56 @@
+
+# Ignore virtual environment folders
 .venv/
-__pycache__/
+venv/
+env/
+
+# Ignore Python bytecode files
 *.pyc
 *.pyo
-.git/
-*.db
-*.sqlite3
+__pycache__/
+
+# Ignore Django database files
+db.sqlite3
+
+# Ignore Django migrations (optional, but keep migrations for version control if possible)
+project_name/app_name/migrations/
+
+# Ignore environment variable files
 .env
-staticfiles/
+.env.*
+
+# Ignore log files
+*.log
+
+# Ignore IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore Node modules if using JavaScript tools
+node_modules/
+
+# Ignore compiled frontend files (static build files)
+static/
+dist/
+build/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Python packaging and test tool files
+.tox/
+.coverage
+.hypothesis/
+.pytest_cache/
+*.egg-info/
+
+# Ignore Docker files (if applicable)
+.docker/
+docker-compose.override.yml
+
+# Ignore coverage reports
+.coverage
+.coverage.*

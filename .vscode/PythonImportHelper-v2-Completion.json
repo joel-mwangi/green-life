@@ -91,6 +91,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -335,6 +351,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "project_name.app_name.migrations.0002_remove_userprofile_address_userprofile_city_and_more",
+        "description": "project_name.app_name.migrations.0002_remove_userprofile_address_userprofile_city_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('app_name', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='userprofile',\n            name='address',\n        ),\n        migrations.AddField(",
+        "detail": "project_name.app_name.migrations.0002_remove_userprofile_address_userprofile_city_and_more",
+        "documentation": {}
+    },
+    {
         "label": "FoodItemAdmin",
         "kind": 6,
         "importPath": "project_name.app_name.admin",
@@ -357,7 +382,7 @@
         "kind": 6,
         "importPath": "project_name.app_name.admin",
         "description": "project_name.app_name.admin",
-        "peekOfCode": "class OrderItemAdmin(admin.ModelAdmin):\n    list_display = ('order', 'menu_item', 'quantity', 'total_price')\n    search_fields = ('order__id', 'menu_item__name')\nclass OrderAdmin(admin.ModelAdmin):\n    list_display = ('user', 'total_price', 'status', 'created_at', 'updated_at')\n    list_filter = ('status',)\n    search_fields = ('user__username', 'status')\nclass UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'phone_number', 'address')\n    search_fields = ('user__username', 'phone_number')",
+        "peekOfCode": "class OrderItemAdmin(admin.ModelAdmin):\n    list_display = ('order', 'menu_item', 'quantity', 'total_price')\n    search_fields = ('order__id', 'menu_item__name')\nclass OrderAdmin(admin.ModelAdmin):\n    list_display = ('user', 'total_price', 'status', 'created_at', 'updated_at')\n    list_filter = ('status',)\n    search_fields = ('user__username', 'status')\nclass UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'phone_number', 'street_address','city','state','postal_code','country')\n    search_fields = ('user__username', 'phone_number')",
         "detail": "project_name.app_name.admin",
         "documentation": {}
     },
@@ -366,7 +391,7 @@
         "kind": 6,
         "importPath": "project_name.app_name.admin",
         "description": "project_name.app_name.admin",
-        "peekOfCode": "class OrderAdmin(admin.ModelAdmin):\n    list_display = ('user', 'total_price', 'status', 'created_at', 'updated_at')\n    list_filter = ('status',)\n    search_fields = ('user__username', 'status')\nclass UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'phone_number', 'address')\n    search_fields = ('user__username', 'phone_number')\nclass SpecialMenuAdmin(admin.ModelAdmin):\n    list_display = ('food_item', 'date')\n    list_filter = ('date',)",
+        "peekOfCode": "class OrderAdmin(admin.ModelAdmin):\n    list_display = ('user', 'total_price', 'status', 'created_at', 'updated_at')\n    list_filter = ('status',)\n    search_fields = ('user__username', 'status')\nclass UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'phone_number', 'street_address','city','state','postal_code','country')\n    search_fields = ('user__username', 'phone_number')\nclass SpecialMenuAdmin(admin.ModelAdmin):\n    list_display = ('food_item', 'date')\n    list_filter = ('date',)",
         "detail": "project_name.app_name.admin",
         "documentation": {}
     },
@@ -375,7 +400,7 @@
         "kind": 6,
         "importPath": "project_name.app_name.admin",
         "description": "project_name.app_name.admin",
-        "peekOfCode": "class UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'phone_number', 'address')\n    search_fields = ('user__username', 'phone_number')\nclass SpecialMenuAdmin(admin.ModelAdmin):\n    list_display = ('food_item', 'date')\n    list_filter = ('date',)\n    search_fields = ('food_item__name',)\nclass ReservationAdmin(admin.ModelAdmin):\n    list_display = ('user', 'reservation_date', 'special_requests')\n    list_filter = ('reservation_date',)",
+        "peekOfCode": "class UserProfileAdmin(admin.ModelAdmin):\n    list_display = ('user', 'phone_number', 'street_address','city','state','postal_code','country')\n    search_fields = ('user__username', 'phone_number')\nclass SpecialMenuAdmin(admin.ModelAdmin):\n    list_display = ('food_item', 'date')\n    list_filter = ('date',)\n    search_fields = ('food_item__name',)\nclass ReservationAdmin(admin.ModelAdmin):\n    list_display = ('user', 'reservation_date', 'special_requests')\n    list_filter = ('reservation_date',)",
         "detail": "project_name.app_name.admin",
         "documentation": {}
     },
@@ -483,7 +508,7 @@
         "kind": 6,
         "importPath": "project_name.app_name.forms",
         "description": "project_name.app_name.forms",
-        "peekOfCode": "class ReservationForm(forms.ModelForm):\n    class Meta:\n        model = Reservation\n        fields = ['user', 'number_of_people', 'reservation_date', 'special_requests']\nclass UserProfileForm(forms.ModelForm):\n    class Meta:\n        model = UserProfile\n        fields = ['user', 'phone_number', 'address', 'profile_picture']\nclass PaymentForm(forms.ModelForm):\n    class Meta:",
+        "peekOfCode": "class ReservationForm(forms.ModelForm):\n    class Meta:\n        model = Reservation\n        fields = ['user', 'number_of_people', 'reservation_date', 'special_requests']\nclass UserProfileForm(forms.ModelForm):\n    class Meta:\n        model = UserProfile\n        fields = ['phone_number', 'street_address', 'city', 'state', 'postal_code', 'country', 'profile_picture']\nclass PaymentForm(forms.ModelForm):\n    class Meta:",
         "detail": "project_name.app_name.forms",
         "documentation": {}
     },
@@ -492,7 +517,7 @@
         "kind": 6,
         "importPath": "project_name.app_name.forms",
         "description": "project_name.app_name.forms",
-        "peekOfCode": "class UserProfileForm(forms.ModelForm):\n    class Meta:\n        model = UserProfile\n        fields = ['user', 'phone_number', 'address', 'profile_picture']\nclass PaymentForm(forms.ModelForm):\n    class Meta:\n        model = Payment\n        fields = ['order', 'stripe_payment_id', 'amount_paid']\nclass DeliveryPersonnelForm(forms.ModelForm):\n    class Meta:",
+        "peekOfCode": "class UserProfileForm(forms.ModelForm):\n    class Meta:\n        model = UserProfile\n        fields = ['phone_number', 'street_address', 'city', 'state', 'postal_code', 'country', 'profile_picture']\nclass PaymentForm(forms.ModelForm):\n    class Meta:\n        model = Payment\n        fields = ['order', 'stripe_payment_id', 'amount_paid']\nclass DeliveryPersonnelForm(forms.ModelForm):\n    class Meta:",
         "detail": "project_name.app_name.forms",
         "documentation": {}
     },
@@ -582,7 +607,7 @@
         "kind": 6,
         "importPath": "project_name.app_name.models",
         "description": "project_name.app_name.models",
-        "peekOfCode": "class UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    phone_number = models.CharField(max_length=15, blank=True, null=True)\n    address = models.TextField(blank=True, null=True)\n    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)\n    def __str__(self):\n        return self.user.username\nclass Payment(models.Model):\n    order = models.OneToOneField(Order, related_name=\"payment\", on_delete=models.CASCADE)\n    stripe_payment_id = models.CharField(max_length=255, unique=True)",
+        "peekOfCode": "class UserProfile(models.Model):\n    user = models.OneToOneField(User, on_delete=models.CASCADE)\n    phone_number = models.CharField(max_length=15, blank=True, null=True)\n    street_address = models.CharField(max_length=255, blank=True)\n    city = models.CharField(max_length=100, blank=True)\n    state = models.CharField(max_length=100, blank=True) \n    postal_code = models.CharField(max_length=20, blank=True) \n    country = models.CharField(max_length=100, blank=True)\n    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)\n    def __str__(self):",
         "detail": "project_name.app_name.models",
         "documentation": {}
     },

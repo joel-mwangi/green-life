@@ -20,7 +20,7 @@ class OrderAdmin(admin.ModelAdmin):
     search_fields = ('user__username', 'status')
 
 class UserProfileAdmin(admin.ModelAdmin):
-    list_display = ('user', 'phone_number', 'address')
+    list_display = ('user', 'phone_number', 'street_address','city','state','postal_code','country')
     search_fields = ('user__username', 'phone_number')
 
 class SpecialMenuAdmin(admin.ModelAdmin):

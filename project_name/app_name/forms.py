@@ -34,7 +34,7 @@ class ReservationForm(forms.ModelForm):
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
-        fields = ['user', 'phone_number', 'address', 'profile_picture']
+        fields = ['phone_number', 'street_address', 'city', 'state', 'postal_code', 'country', 'profile_picture']
 
 class PaymentForm(forms.ModelForm):
     class Meta:

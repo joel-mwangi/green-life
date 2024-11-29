@@ -3,22 +3,102 @@
 {% load static %}  <!-- Load the static tag -->
 
 {% block content %}
-  <div class="container">
-    <h2>Edit Your Profile</h2>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: lightblue;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    .profile-picture-container img {
+        object-fit: cover;
+        border-radius: 50%;
+        border:inset;
+        padding: 5px;
+    }
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        padding:10px;
+        display:block;
+    }
+
+    .form-label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"] {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .alert {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column;
+        }
+        .text-center {
+            margin-bottom: 20px;
+        }
+    }
+  </style>
+
+  <div class="container py-4">
+    <h2 class="text-center mb-4">My Profile</h2>
 
     <div class="row">
-      <div class="col-md-4 text-center">
-        <!-- Display profile picture as a circle on the left side -->
-        {% if form.instance.profile_picture %}
-          <img src="{{ form.instance.profile_picture.url }}" alt="Profile Picture" class="img-circle" width="150" height="150">
-        {% else %}
-          <!-- Placeholder image for profile if none uploaded -->
-          <img src="{% static 'default-avatar.png' %}" alt="Default Avatar" class="img-circle" width="150" height="150">
-        {% endif %}
+      <div class="col-md-4 text-center mb-4">
+        <!-- Profile picture section -->
+        <div class="profile-picture-container">
+          {% if form.instance.profile_picture %}
+            <img src="{{ form.instance.profile_picture.url }}" alt="Profile Picture" class="rounded-circle shadow" width="150" height="150">
+          {% else %}
+            <img src="{% static 'default-avatar.png' %}" alt="Default Avatar" class="rounded-circle shadow" width="150" height="150">
+          {% endif %}
+        </div>
+        <p class="mt-2 text-muted">Profile Picture</p>
       </div>
       <div class="col-md-8">
-        <!-- Display form for editing user profile -->
-        <form method="POST" enctype="multipart/form-data">
+        <!-- Form section -->
+        <form method="POST" enctype="multipart/form-data" class="card p-4 shadow-sm">
           {% csrf_token %}
           
           <!-- Display form errors if there are any -->
@@ -35,27 +115,44 @@
           {% endif %}
           
           <!-- Display fields of the form -->
-          <div class="form-group">
-            <label for="id_user">User</label>
-            {{ form.user }}
-          </div>
-
-          <div class="form-group">
-            <label for="id_phone_number">Phone Number</label>
+          <div class="form-group mb-3">
+            <label for="id_phone_number" class="form-label">Phone Number</label>
             {{ form.phone_number }}
           </div>
 
-          <div class="form-group">
-            <label for="id_address">Address</label>
-            {{ form.address }}
+          <div class="form-group mb-3">
+            <label for="id_street_address" class="form-label">Street Address</label>
+            {{ form.street_address }}
           </div>
 
-          <div class="form-group">
-            <label for="id_profile_picture">Profile Picture</label>
+          <div class="form-group mb-3">
+            <label for="id_city" class="form-label">City</label>
+            {{ form.city }}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="id_state" class="form-label">State</label>
+            {{ form.state }}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="id_postal_code" class="form-label">Postal Code</label>
+            {{ form.postal_code }}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="id_country" class="form-label">Country</label>
+            {{ form.country }}
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="id_profile_picture" class="form-label">Profile Picture</label>
             {{ form.profile_picture }}
           </div>
 
-          <button type="submit" class="btn btn-primary">Save Profile</button>
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </div>
         </form>
       </div>
     </div>

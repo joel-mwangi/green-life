@@ -24,7 +24,4 @@ urlpatterns = [
     path('', include('app_name.urls')),  # Replace 'app_name' with the actual name of your app
 ]
 if settings.DEBUG:
-    urlpatterns +=[ 
-                   static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-                   static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    ]
+    urlpatterns+=static(setting.MEDIA_URL,document_root=setting.MEDIA_ROOT)

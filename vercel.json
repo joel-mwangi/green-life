@@ -1,20 +1,23 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "project_name/wsgi.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "project_name/wsgi.py"
-      }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "project_name/wsgi.py",    // Entry point for Django app
+      "use": "@vercel/python"             // Use Python builder for Django
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",       // Route all requests to Django's manage.py
+      "dest": "project_name/wsgi.py"
+    }
+  ],
+  "env": {
+    "DJANGO_SECRET_KEY": "your-django-secret-key",
+    "DATABASE_URL": "your-database-url"
+  },
+  "static": {
+    "src": "project_name/static",      // Vercel should serve static files from here
+    "dest": "/_next/static"            // Map Vercel's static folder to Django's static
   }
-  
+}

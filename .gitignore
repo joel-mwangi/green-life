@@ -5,6 +5,7 @@ venv/
 env/
 
 # Ignore Python bytecode files
+.vercel
 *.pyc
 *.pyo
 __pycache__/

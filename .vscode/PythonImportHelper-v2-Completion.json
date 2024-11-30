@@ -43,30 +43,6 @@
         "documentation": {}
     },
     {
-        "label": "Decimal",
-        "importPath": "decimal",
-        "description": "decimal",
-        "isExtraImport": true,
-        "detail": "decimal",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
         "label": "settings",
         "importPath": "django.conf",
         "description": "django.conf",
@@ -76,30 +52,6 @@
     },
     {
         "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -124,14 +76,6 @@
     },
     {
         "label": "messages",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -171,14 +115,6 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
         "label": "timezone",
         "importPath": "django.utils",
         "description": "django.utils",
@@ -192,14 +128,6 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -339,6 +267,15 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -868,7 +805,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'project_name.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware','whitenoise.middleware.WhiteNoiseMiddleware', \n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'project_name.urls'",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1030,7 +967,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "EMAIL_HOST = 'smtp.your-email-provider.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "EMAIL_HOST = 'smtp.your-email-provider.com'\nEMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1039,7 +976,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "EMAIL_PORT = 587\nEMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1048,7 +985,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "EMAIL_USE_TLS = True\nEMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1057,7 +994,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')\nEMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1066,7 +1003,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')\n# Stripe settings\nSTRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1075,7 +1012,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "STRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STRIPE_TEST_PUBLIC_KEY = os.environ.get('STRIPE_TEST_PUBLIC_KEY')\nSTRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1084,7 +1021,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "STRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STRIPE_TEST_SECRET_KEY = os.environ.get('STRIPE_TEST_SECRET_KEY')\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1093,7 +1030,16 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nSTATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'",
+        "detail": "project_name.project_name.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_STORAGE",
+        "kind": 5,
+        "importPath": "project_name.project_name.settings",
+        "description": "project_name.project_name.settings",
+        "peekOfCode": "STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1122,6 +1068,24 @@
         "description": "project_name.manage",
         "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project_name.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "project_name.manage",
+        "documentation": {}
+    },
+    {
+        "label": "seen",
+        "kind": 5,
+        "importPath": "deduplicate",
+        "description": "deduplicate",
+        "peekOfCode": "seen = set()\nunique_data = []\nfor item in data:\n    key = (item[\"label\"], item[\"importPath\"])\n    if key not in seen:\n        seen.add(key)\n        unique_data.append(item)\n# Save the cleaned JSON back to the file\nwith open(\".vscode/PythonImportHelper-v2-Completion.json\", \"w\") as file:\n    json.dump(unique_data, file, indent=4)",
+        "detail": "deduplicate",
+        "documentation": {}
+    },
+    {
+        "label": "unique_data",
+        "kind": 5,
+        "importPath": "deduplicate",
+        "description": "deduplicate",
+        "peekOfCode": "unique_data = []\nfor item in data:\n    key = (item[\"label\"], item[\"importPath\"])\n    if key not in seen:\n        seen.add(key)\n        unique_data.append(item)\n# Save the cleaned JSON back to the file\nwith open(\".vscode/PythonImportHelper-v2-Completion.json\", \"w\") as file:\n    json.dump(unique_data, file, indent=4)\nprint(\"Duplicates removed!\")",
+        "detail": "deduplicate",
         "documentation": {}
     }
 ]

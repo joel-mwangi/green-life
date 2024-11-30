@@ -1,18 +1,18 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "project_name/project_name/wsgi.py",
-      "use": "@vercel/python",
-      "config": {
-        "distDir": "build"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "project_name/project_name/wsgi.py"
-    }
-  ]
+    "version": 2,
+    "builds": [
+        {
+            "src": "project_name/project_name/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "distDir": "build"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "project_name/project_name/wsgi.py"
+        }
+    ]
 }

@@ -107,7 +107,7 @@ nav ul li a:hover {
             <nav>
                 <ul id="menu" class="menu">
                     <li><a href="{% url 'home' %}">Home</a></li>
-                    <li><a href="{% url 'order_success' %}">Our Services</a></li>
+                    <li><a href="services">Our Services</a></li>
                     <li><a href="about">About Us</a></li>
                     <li><a href="contact">Contact Us</a></li>
                     <li><a href="booking">Book Now</a></li>
@@ -121,7 +121,8 @@ nav ul li a:hover {
     </header>
     
     <main>
-        {% block content %}{% endblock %} <!-- Block for page-specific content -->
+        {% block content %}{%block time%} {% endblock %}
+        {% endblock %} <!-- Block for page-specific content -->
     </main>
      
     <footer>

@@ -1,9 +1,3 @@
 {
-    "python.pythonPath": ".venv\\Scripts\\python.exe",
-    "cSpell.words": [
-        "formstyles",
-        "initializeslider",
-        "prevslide",
-        "showslide"
-    ]
+    "python.pythonPath": ".venv\\Scripts\\python.exe"
 }

@@ -43,6 +43,30 @@
         "documentation": {}
     },
     {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
         "label": "settings",
         "importPath": "django.conf",
         "description": "django.conf",
@@ -67,6 +91,30 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -76,6 +124,14 @@
     },
     {
         "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
         "isExtraImport": true,
@@ -115,6 +171,14 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "timezone",
         "importPath": "django.utils",
         "description": "django.utils",
@@ -128,6 +192,14 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -203,15 +275,6 @@
         "documentation": {}
     },
     {
-        "label": "stripe",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "stripe",
-        "description": "stripe",
-        "detail": "stripe",
-        "documentation": {}
-    },
-    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -250,6 +313,14 @@
         "description": "django.conf.urls.static",
         "isExtraImport": true,
         "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "app_name",
+        "description": "app_name",
+        "isExtraImport": true,
+        "detail": "app_name",
         "documentation": {}
     },
     {
@@ -585,6 +656,15 @@
         "documentation": {}
     },
     {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "project_name.app_name.urls",
+        "description": "project_name.app_name.urls",
+        "peekOfCode": "app_name = 'app_name'\nurlpatterns = [\n    # Home page\n    path('', views.home, name='home'),\n    # User authentication views\n    path('register/', views.register_view, name='register'),\n    path('login/', views.login_view, name='login'),\n    # Order and menu views\n    path('order/', views.place_order, name='order'),\n    path('order/success/', views.order_success, name='order_success'),",
+        "detail": "project_name.app_name.urls",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "project_name.app_name.urls",
@@ -634,7 +714,7 @@
         "kind": 2,
         "importPath": "project_name.app_name.views",
         "description": "project_name.app_name.views",
-        "peekOfCode": "def reservation_view(request):\n    if request.method == \"POST\":\n        form = ReservationForm(request.POST)\n        if form.is_valid():\n            reservation = form.save(commit=False)\n            reservation.user = request.user  # Link reservation to the logged-in user\n            reservation.save()\n            messages.success(request, \"Your reservation has been successfully made!\")\n            return redirect(\"reservation_success\")\n        else:",
+        "peekOfCode": "def reservation_view(request):\n    if request.method == \"POST\":\n        form = ReservationForm(request.POST)\n        if form.is_valid():\n            reservation = form.save(commit=False)\n            reservation.user = request.user  # Link reservation to the logged-in user\n            reservation.save()\n            messages.success(\n                request, \"Your reservation has been successfully made!\")\n            return redirect(\"app_name/reservation_success\")",
         "detail": "project_name.app_name.views",
         "documentation": {}
     },
@@ -643,7 +723,7 @@
         "kind": 2,
         "importPath": "project_name.app_name.views",
         "description": "project_name.app_name.views",
-        "peekOfCode": "def reservation_success(request):\n    return render(request, \"app_name/reservation_success.html\")\n@login_required\ndef profile_view(request):\n    user_profile, form= UserProfile.objects.get_or_create(user=request.user)\n    if request.method == \"POST\":\n        form = UserProfileForm(request.POST, request.FILES, instance=user_profile)\n        if form.is_valid():\n            form.save()\n            messages.success(request, \"Your profile has been updated successfully!\")",
+        "peekOfCode": "def reservation_success(request):\n    return render(request, \"app_name/reservation_success.html\")\n@login_required\ndef profile_view(request):\n    user_profile, form = UserProfile.objects.get_or_create(user=request.user)\n    if request.method == \"POST\":\n        form = UserProfileForm(\n            request.POST, request.FILES, instance=user_profile)\n        if form.is_valid():\n            form.save()",
         "detail": "project_name.app_name.views",
         "documentation": {}
     },
@@ -652,7 +732,7 @@
         "kind": 2,
         "importPath": "project_name.app_name.views",
         "description": "project_name.app_name.views",
-        "peekOfCode": "def profile_view(request):\n    user_profile, form= UserProfile.objects.get_or_create(user=request.user)\n    if request.method == \"POST\":\n        form = UserProfileForm(request.POST, request.FILES, instance=user_profile)\n        if form.is_valid():\n            form.save()\n            messages.success(request, \"Your profile has been updated successfully!\")\n            return redirect(\"profile\")\n        else:\n            messages.error(request, \"There was an error updating your profile.\")",
+        "peekOfCode": "def profile_view(request):\n    user_profile, form = UserProfile.objects.get_or_create(user=request.user)\n    if request.method == \"POST\":\n        form = UserProfileForm(\n            request.POST, request.FILES, instance=user_profile)\n        if form.is_valid():\n            form.save()\n            messages.success(\n                request, \"Your profile has been updated successfully!\")\n            return redirect(\"app_name/profile.html\")",
         "detail": "project_name.app_name.views",
         "documentation": {}
     },
@@ -805,7 +885,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.settings",
         "description": "project_name.project_name.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware','whitenoise.middleware.WhiteNoiseMiddleware', \n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'project_name.urls'",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n # Add this line\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
         "detail": "project_name.project_name.settings",
         "documentation": {}
     },
@@ -1048,7 +1128,7 @@
         "kind": 5,
         "importPath": "project_name.project_name.urls",
         "description": "project_name.project_name.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('app_name.urls')),  # Replace 'app_name' with the actual name of your app\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', views.home, name='home'),  # Map root URL to the home view\n    path('app_name/', include('app_name.urls')),  # app_name\n]\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
         "detail": "project_name.project_name.urls",
         "documentation": {}
     },
@@ -1071,21 +1151,66 @@
         "documentation": {}
     },
     {
-        "label": "seen",
-        "kind": 5,
+        "label": "deduplicate_json",
+        "kind": 2,
         "importPath": "deduplicate",
         "description": "deduplicate",
-        "peekOfCode": "seen = set()\nunique_data = []\nfor item in data:\n    key = (item[\"label\"], item[\"importPath\"])\n    if key not in seen:\n        seen.add(key)\n        unique_data.append(item)\n# Save the cleaned JSON back to the file\nwith open(\".vscode/PythonImportHelper-v2-Completion.json\", \"w\") as file:\n    json.dump(unique_data, file, indent=4)",
+        "peekOfCode": "def deduplicate_json(file_path):\n    with open(file_path, \"r\") as file:\n        data = json.load(file)\n    # Deduplicate based on 'label' and 'importPath'\n    seen = set()\n    unique_data = []\n    for item in data:\n        key = (item[\"label\"], item[\"importPath\"])\n        if key not in seen:\n            seen.add(key)",
         "detail": "deduplicate",
         "documentation": {}
     },
     {
-        "label": "unique_data",
+        "label": "deduplicate_txt",
+        "kind": 2,
+        "importPath": "deduplicate",
+        "description": "deduplicate",
+        "peekOfCode": "def deduplicate_txt(file_path):\n    if not os.path.exists(file_path):\n        print(f\"File {file_path} not found!\")\n        return\n    with open(file_path, \"r\") as file:\n        lines = file.readlines()\n    # Deduplicate lines\n    unique_lines = sorted(set(line.strip() for line in lines if line.strip()))\n    # Save the cleaned text back to the file\n    with open(file_path, \"w\") as file:",
+        "detail": "deduplicate",
+        "documentation": {}
+    },
+    {
+        "label": "json_file",
         "kind": 5,
         "importPath": "deduplicate",
         "description": "deduplicate",
-        "peekOfCode": "unique_data = []\nfor item in data:\n    key = (item[\"label\"], item[\"importPath\"])\n    if key not in seen:\n        seen.add(key)\n        unique_data.append(item)\n# Save the cleaned JSON back to the file\nwith open(\".vscode/PythonImportHelper-v2-Completion.json\", \"w\") as file:\n    json.dump(unique_data, file, indent=4)\nprint(\"Duplicates removed!\")",
+        "peekOfCode": "json_file = \".vscode/PythonImportHelper-v2-Completion.json\"\ntxt_file = \"requirements.txt\"\n# Function to deduplicate JSON file\ndef deduplicate_json(file_path):\n    with open(file_path, \"r\") as file:\n        data = json.load(file)\n    # Deduplicate based on 'label' and 'importPath'\n    seen = set()\n    unique_data = []\n    for item in data:",
         "detail": "deduplicate",
+        "documentation": {}
+    },
+    {
+        "label": "txt_file",
+        "kind": 5,
+        "importPath": "deduplicate",
+        "description": "deduplicate",
+        "peekOfCode": "txt_file = \"requirements.txt\"\n# Function to deduplicate JSON file\ndef deduplicate_json(file_path):\n    with open(file_path, \"r\") as file:\n        data = json.load(file)\n    # Deduplicate based on 'label' and 'importPath'\n    seen = set()\n    unique_data = []\n    for item in data:\n        key = (item[\"label\"], item[\"importPath\"])",
+        "detail": "deduplicate",
+        "documentation": {}
+    },
+    {
+        "label": "remove_duplicates",
+        "kind": 2,
+        "importPath": "remove_duplicates",
+        "description": "remove_duplicates",
+        "peekOfCode": "def remove_duplicates(data):\n    if isinstance(data, list):\n        seen = set()\n        unique_data = []\n        for item in data:\n            # Using json.dumps to handle nested dict comparison\n            item_str = json.dumps(item, sort_keys=True)\n            if item_str not in seen:\n                unique_data.append(item)\n                seen.add(item_str)",
+        "detail": "remove_duplicates",
+        "documentation": {}
+    },
+    {
+        "label": "process_json_files_in_directory",
+        "kind": 2,
+        "importPath": "remove_duplicates",
+        "description": "remove_duplicates",
+        "peekOfCode": "def process_json_files_in_directory(directory):\n    for root, _, files in os.walk(directory):\n        for filename in files:\n            if filename.endswith('.json'):\n                file_path = os.path.join(root, filename)\n                try:\n                    with open(file_path, 'r', encoding='utf-8') as f:\n                        # Load the JSON data\n                        data = json.load(f)\n                        # Remove duplicates from the data",
+        "detail": "remove_duplicates",
+        "documentation": {}
+    },
+    {
+        "label": "project_folder",
+        "kind": 5,
+        "importPath": "remove_duplicates",
+        "description": "remove_duplicates",
+        "peekOfCode": "project_folder = r'E:\\myproject\\project_name'\n# Function to remove duplicate items from a list of JSON objects (assuming your JSON contains arrays)\ndef remove_duplicates(data):\n    if isinstance(data, list):\n        seen = set()\n        unique_data = []\n        for item in data:\n            # Using json.dumps to handle nested dict comparison\n            item_str = json.dumps(item, sort_keys=True)\n            if item_str not in seen:",
+        "detail": "remove_duplicates",
         "documentation": {}
     }
 ]

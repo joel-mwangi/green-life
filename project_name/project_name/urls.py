@@ -18,10 +18,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-
+from app_name import views  # Import the home view directly
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('app_name/', include('app_name.urls')),  # Replace 'app_name' with the actual name of your app
+    path('', views.home, name='home'),  # Map root URL to the home view
+    path('app_name/', include('app_name.urls')),  # app_name
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

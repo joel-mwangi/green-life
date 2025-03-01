@@ -3,17 +3,19 @@
 {% load static %}  <!-- Load the static tag -->
 
 {% block content %}
+{%block time%}<p>The current date and time is: {% now "DATETIME_FORMAT" %}</p> {% endblock %}
+
   <style>
     body {
         font-family: Arial, sans-serif;
-        background-color: lightblue;
+        background-color: #f8f9fa;
         margin: 0;
         padding: 0;
     }
 
     .container {
-        max-width: 900px;
-        margin: 10px;
+        max-width: 1000px;
+        margin: 20px auto;
         padding: 20px;
     }
 
@@ -24,9 +26,12 @@
     .profile-picture-container img {
         object-fit: cover;
         border-radius: 50%;
-        border:inset;
+        border: 2px solid #ddd;
         padding: 5px;
+        width: 150px;
+        height: 150px;
     }
+
     .card {
         background-color: #fff;
         border-radius: 8px;
@@ -35,8 +40,7 @@
 
     .form-group {
         margin-bottom: 15px;
-        padding:10px;
-        display:block;
+        display: block;
     }
 
     .form-label {
@@ -48,7 +52,7 @@
     input[type="email"],
     input[type="password"],
     input[type="file"] {
-        width: 80%;
+        width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
@@ -71,12 +75,19 @@
         margin-bottom: 20px;
     }
 
+    /* Responsive styles */
     @media (max-width: 768px) {
+        .container {
+            padding: 10px;
+        }
+
         .row {
             flex-direction: column;
         }
-        .text-center {
-            margin-bottom: 20px;
+
+        .profile-picture-container img {
+            width: 120px;
+            height: 120px;
         }
     }
   </style>
@@ -89,9 +100,9 @@
         <!-- Profile picture section -->
         <div class="profile-picture-container">
           {% if form.instance.profile_picture %}
-            <img src="{{ form.instance.profile_picture.url }}" alt="Profile Picture" class="rounded-circle shadow" width="150" height="150">
+            <img src="{{ form.instance.profile_picture.url }}" alt="Profile Picture" class="rounded-circle shadow" id="profilePicPreview">
           {% else %}
-            <img src="{% static 'default-avatar.png' %}" alt="Default Avatar" class="rounded-circle shadow" width="150" height="150">
+            <img src="{% static 'default-avatar.png' %}" alt="Default Avatar" class="rounded-circle shadow" id="profilePicPreview">
           {% endif %}
         </div>
         <p class="mt-2 text-muted">Profile Picture</p>
@@ -157,4 +168,16 @@
       </div>
     </div>
   </div>
+
+  <script>
+    // Preview profile picture before uploading
+    document.getElementById("id_profile_picture").addEventListener("change", function(event) {
+      var reader = new FileReader();
+      reader.onload = function() {
+        var previewImage = document.getElementById("profilePicPreview");
+        previewImage.src = reader.result;
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    });
+  </script>
 {% endblock %}

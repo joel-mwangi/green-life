@@ -1,3 +1,4 @@
+from email.policy import strict
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
@@ -5,14 +6,30 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
-import stripe
 from datetime import date
 
-# Forms
-from .forms import ReservationForm, UserProfileForm, OrderForm, PaymentForm, SpecialMenuForm
+# Third-party libraries
 
-# Models
-from .models import FoodItem, MenuItem, Order, OrderItem, DeliveryPersonnel, UserProfile, SpecialMenu
+
+# Importing Forms
+from .forms import (
+    ReservationForm,
+    UserProfileForm,
+    OrderForm,
+    PaymentForm,
+    SpecialMenuForm,
+)
+
+# Importing Models
+from .models import (
+    FoodItem,
+    MenuItem,
+    Order,
+    OrderItem,
+    DeliveryPersonnel,
+    UserProfile,
+    SpecialMenu,
+)
 
 
 def home(request):
@@ -42,9 +59,12 @@ def register_view(request):
             return redirect("register")
 
         # Create the user
-        User.objects.create_user(username=username, email=email, password=password1)
-        messages.success(request, "Registration successful! You can now log in.")
-        return redirect("login")  # Redirect to the login page after registration
+        User.objects.create_user(
+            username=username, email=email, password=password1)
+        messages.success(
+            request, "Registration successful! You can now log in.")
+        # Redirect to the login page after registration
+        return redirect("login")
 
     return render(request, "app_name/register.html")
 
@@ -62,14 +82,16 @@ def login_view(request):
                 "home"
             )  # Redirect to the homepage or a dashboard after login
         else:
-            messages.error(request,"Invalid username or password. Please ensure you are registered." )
+            messages.error(
+                request, "Invalid username or password. Please ensure you are registered.")
 
     return render(request, "app_name/login.html")
+
 
 @login_required
 def place_order(request):
     form = OrderForm()  # Initialize the form
-    
+
     if request.method == "POST":
         form = OrderForm(request.POST)
         if form.is_valid():
@@ -80,15 +102,16 @@ def place_order(request):
 
             # Loop through each item submitted in the order form
             for key, value in request.POST.items():
-                if key.startswith("item_"):  # Assuming item IDs are named like "item_1", "item_2", etc.
+                # Assuming item IDs are named like "item_1", "item_2", etc.
+                if key.startswith("item_"):
                     item_id = key.split("_")[1]
                     try:
                         menu_item = MenuItem.objects.get(id=item_id)
                         quantity = int(value)
                         if quantity > 0:
                             OrderItem.objects.create(
-                                order=order, 
-                                menu_item=menu_item, 
+                                order=order,
+                                menu_item=menu_item,
                                 quantity=quantity
                             )
                             total_price += menu_item.price * quantity
@@ -100,10 +123,13 @@ def place_order(request):
 
             return redirect("order_success")  # Redirect to success page
         else:
-            messages.error(request, "There was an error in your order. Please try again.")
+            messages.error(
+                request, "There was an error in your order. Please try again.")
 
     menu_items = MenuItem.objects.all()
     return render(request, "app_name/order.html", {"form": form, "menu_items": menu_items})
+
+
 @login_required
 def reservation_view(request):
     if request.method == "POST":
@@ -112,8 +138,9 @@ def reservation_view(request):
             reservation = form.save(commit=False)
             reservation.user = request.user  # Link reservation to the logged-in user
             reservation.save()
-            messages.success(request, "Your reservation has been successfully made!")
-            return redirect("reservation_success")
+            messages.success(
+                request, "Your reservation has been successfully made!")
+            return redirect("app_name/reservation_success")
         else:
             messages.error(request, "Please correct the errors below.")
     else:
@@ -125,18 +152,22 @@ def reservation_view(request):
 def reservation_success(request):
     return render(request, "app_name/reservation_success.html")
 
+
 @login_required
 def profile_view(request):
-    user_profile, form= UserProfile.objects.get_or_create(user=request.user)
+    user_profile, form = UserProfile.objects.get_or_create(user=request.user)
 
     if request.method == "POST":
-        form = UserProfileForm(request.POST, request.FILES, instance=user_profile)
+        form = UserProfileForm(
+            request.POST, request.FILES, instance=user_profile)
         if form.is_valid():
             form.save()
-            messages.success(request, "Your profile has been updated successfully!")
-            return redirect("profile")
+            messages.success(
+                request, "Your profile has been updated successfully!")
+            return redirect("app_name/profile.html")
         else:
-            messages.error(request, "There was an error updating your profile.")
+            messages.error(
+                request, "There was an error updating your profile.")
     else:
         form = UserProfileForm(instance=user_profile)
 
@@ -154,6 +185,8 @@ def menu(request):
     })
 
 # View to add a special food item to the menu for today
+
+
 def add_special_menu(request):
     if request.method == 'POST':
         form = SpecialMenuForm(request.POST)
@@ -165,7 +198,9 @@ def add_special_menu(request):
     else:
         form = SpecialMenuForm()
 
-    return render(request, 'app)name/add_special_menu.html', {'form': form})
+    return render(request, 'app_name/add_special_menu.html', {'form': form})
+
+
 @login_required
 def update_order_status(request, order_id):
     order = get_object_or_404(Order, id=order_id)
@@ -197,7 +232,8 @@ def notify_customer(order):
 
     send_mail(subject, message, email_from, recipient_list)
     # Implement email or SMS notification logic here
-    stripe.api_key = settings.STRIPE_TEST_SECRET_KEY
+    strict.api_key = settings.STRIPE_TEST_SECRET_KEY
+
 
 @login_required
 def process_payment(request, order_id):
@@ -222,7 +258,8 @@ def process_payment(request, order_id):
                 order.save()
 
                 messages.success(request, "Payment successful!")
-                return redirect("payment_success")  # Redirect to payment success page
+                # Redirect to payment success page
+                return redirect("payment_success")
 
             except stripe.error.StripeError as e:
                 # Handle Stripe errors
@@ -232,10 +269,13 @@ def process_payment(request, order_id):
     else:
         form = PaymentForm(initial={"amount": order.total_price})
 
-    return render(request, "app_name/process_payment.html", {"form": form, "order": order})
+    return render(request, "process_payment.html", {"form": form, "order": order})
+
 
 def payment_success(request):
     return render(request, "app_name/payment_success.html")
+
+
 def payment_error(request):
     return render(request, "app_name/payment_error.html")
 
@@ -244,6 +284,7 @@ def assigned_orders(request):
     delivery_person = get_object_or_404(DeliveryPersonnel, user=request.user)
     orders = Order.objects.filter(delivery_personnel=delivery_person)
     return render(request, "app_name/assigned_orders.html", {"orders": orders})
+
 
 @login_required
 def update_delivery_status(request, order_id):
@@ -255,5 +296,7 @@ def update_delivery_status(request, order_id):
         return redirect("assigned_orders")
 
     return render(request, "app_name/update_status.html", {"order": order})
+
+
 def order_success(request):
     return render(request, "app_name/order_success.html")
